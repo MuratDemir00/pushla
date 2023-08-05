@@ -6,7 +6,7 @@
 /*   By: murdemir <murdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 15:14:20 by murdemir          #+#    #+#             */
-/*   Updated: 2023/08/04 18:15:56 by murdemir         ###   ########.fr       */
+/*   Updated: 2023/08/05 15:50:50 by murdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_array_numidx(t_data *p)
 	int	minindex;
 	int	*temp;
 
-	temp = malloc(sizeof(int) * p->totalNumber);
+	temp = malloc(sizeof(int) * p->total_number);
 	i = -1;
 	min = INT_MIN;
 	while (++i < p->a_size)

@@ -6,7 +6,7 @@
 /*   By: murdemir <murdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 15:14:59 by murdemir          #+#    #+#             */
-/*   Updated: 2023/08/05 13:32:04 by murdemir         ###   ########.fr       */
+/*   Updated: 2023/08/05 15:49:40 by murdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	ft_putnumber(t_data *p, char *str)
 
 	number = ft_atoi(str);
 	if (ft_check_samenum(p->arr_a, number,
-			p->totalNumber - p->a_size, p->totalNumber) == 1)
+			p->total_number - p->a_size, p->total_number) == 1)
 		ft_error("Error");
-	ft_array_push(p->arr_a, (p->totalNumber - 1) - p->a_size++, number);
+	ft_array_push(p->arr_a, (p->total_number - 1) - p->a_size++, number);
 }

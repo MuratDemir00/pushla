@@ -6,10 +6,9 @@
 /*   By: murdemir <murdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 14:10:17 by murdemir          #+#    #+#             */
-/*   Updated: 2023/08/05 10:48:44 by murdemir         ###   ########.fr       */
+/*   Updated: 2023/08/05 19:59:04 by murdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "push_swap.h"
 
@@ -75,12 +74,12 @@ int	main(int ac, char **av)
 
 	if (ac > 1)
 	{
-		p_data.totalNumber = ft_check_numbers(ac, av);
+		p_data.total_number = ft_check_numbers(ac, av);
 		ft_numprocess(&p_data, ac, av);
 		if (ft_check_sorted(&p_data) == 1)
 			return (0);
 		ft_array_numidx(&p_data);
-		if (p_data.totalNumber > 5)
+		if (p_data.total_number > 5)
 		{
 			ft_sort_pivot(&p_data);
 			ft_sort_process(&p_data);

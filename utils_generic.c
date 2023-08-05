@@ -6,7 +6,7 @@
 /*   By: murdemir <murdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 15:14:09 by murdemir          #+#    #+#             */
-/*   Updated: 2023/08/04 17:00:31 by murdemir         ###   ########.fr       */
+/*   Updated: 2023/08/05 15:50:36 by murdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_init(t_data *p)
 {
-	p->arr_a = malloc(sizeof(int) * p->totalNumber);
+	p->arr_a = malloc(sizeof(int) * p->total_number);
 	if (!p->arr_a)
 		return (ft_error("Error"));
-	p->arr_b = malloc(sizeof(int) * p->totalNumber);
+	p->arr_b = malloc(sizeof(int) * p->total_number);
 	if (!p->arr_b)
 		return (ft_error("Error"));
 	p->a_size = 0;

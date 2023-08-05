@@ -6,7 +6,7 @@
 /*   By: murdemir <murdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 15:14:50 by murdemir          #+#    #+#             */
-/*   Updated: 2023/08/05 13:32:17 by murdemir         ###   ########.fr       */
+/*   Updated: 2023/08/05 15:50:04 by murdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct s_data
 	int	*arr_b;
 	int	a_size;
 	int	b_size;
-	int	totalNumber;
+	int	total_number;
 }	t_data;
 
 int		ft_check_numbers(int ac, char **av);
